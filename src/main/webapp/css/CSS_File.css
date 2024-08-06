@@ -1,0 +1,79 @@
+body{
+background-image:url(LockBackground.jpg); /*устанавливает фон для всей страницы*/
+}
+a {                        /* селектор по имени тега - a html все a будут red- строковая константа */
+   color:red;              /* все ссылки green,red - свойство*/
+   font-size:23px;         /* размер шрифта в пикселях стандарт 16px*/
+}
+div {
+   color:#0780D8;           /*задаем цвет - Система цветов HEX (Hexadecimal), идем на сайт www.colorpicker.com*/ /*или  color: rgba(255,0,0,0.5)*/
+}
+#my_link{  /* селектор по идентификатору id   */
+   color:#AD80D9;
+}
+#my_link1{  /* селектор по идентификатору id   */
+   font-size:20px;
+   color:lime;
+}
+.human{     /*селектор по имени класса*/
+color:blue;
+}
+.lion{     /*селектор по имени класса*/
+color:#F4CA16;
+font-size:22px;
+}
+.monkey{     /*селектор по имени класса*/
+color:#BB4B12;
+font-size:22px;
+}
+.fish{     /*селектор по имени класса*/
+color:#318CE7;
+font-size:22px;
+background-color:#8DA399;
+}
+.massage{                                    /*все последующие имеют свойства massage и добавляют или меняют на свои*/
+color:#536872;
+font-size:30px;
+background-color:#8DA399;                    /*свойство отвечает за фон */
+border:1px solid red                       /*свойство отвечает за рамку, 3 параметра - толщина (сплошная- solid,черточки -dashed),цвет*/
+
+}
+.success{
+color:#ffffff;             /*белый*/
+background-color:green;
+}
+.error{
+color:#ffffff;
+background-color:red;
+}
+.info{
+color:#ffffff;
+background-color:blue;
+}
+.warning {
+color:#000000;              /*черный*/
+background-color:#F4CA16;
+}
+.massage:hover{            /*событийный селектор увеличивает рамку на пиксели со всех сторон */
+border: 10px solid red;
+}
+div:hover{
+border: 10px solid red;
+}
+#test{
+background-color:#50C878;
+color:#ffffff;
+padding: 15px;                      /*внутренний отступ*/
+margin:15px;                             /*внешний отступ*/
+border:3px solid green
+border-radius: 100px;                  /*закругляет рамку*/
+opacity:0.6;                         /*свойство задает непрозрачность элемента*/
+box-shadow: 33px 33px 7px #000000       /*создает тень*/
+/*text-align:center;                           /*выравнивание по середине*/
+}
+#test1{
+background-color:#50C878;
+color:#ffffff;
+
+transform:rotate(90deg) scale(0.5);       /*поворот на 90 градусов */     /*уменьшение, увеличение элемента 1/2 */
+}
