@@ -1,4 +1,6 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<!--Эта строка подключает библиотеку тегов Spring Form, которая предоставляет специальные теги для работы с формами.-->
+
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
@@ -10,6 +12,9 @@
     <br>
 
     <form:form action="showDetails" modelAttribute="employee">
+    <!--Этот тег создает форму, которая отправляет данные на URL showDetails.
+     Атрибут modelAttribute="employee" указывает, что данные формы будут связаны с объектом employee-->
+
     Name <form:input path="name"/>
     <br><br>
     Surname <form:input path="surname"/>

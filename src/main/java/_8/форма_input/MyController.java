@@ -24,6 +24,10 @@ public class MyController {
         emp.setSurname("Ivanov");
         emp.setSalary(10000);
         model.addAttribute("employee", emp);
+        //добавляет объект emp в модель под именем “employee”.
+        // Это позволяет передать данные из контроллера в представление (JSP-файл ask-emp-details-input.jsp).
+        // В данном случае, объект Employee с именем “Ivan”, фамилией “Ivanov” и зарплатой 10000
+        // будет доступен в представлении ask-emp-details-input.jsp под именем “employee”.
         return "ask-emp-details-input";
     }
 
